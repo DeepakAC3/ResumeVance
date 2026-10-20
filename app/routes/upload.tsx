@@ -17,14 +17,10 @@ const upload = () => {
 	const [file, setFile] = useState<File | null>(null);
 
 	useEffect(() => {
-		if (!auth.isAuthenticated) {
+		if (!isLoading && !auth.isAuthenticated) {
 			navigate("/auth?next=/upload");
 		}
-	}, [auth.isAuthenticated, navigate]);
-
-	useEffect(() => {
-		if (!auth.isAuthenticated) navigate("/auth?next=/upload");
-	}, [auth.isAuthenticated, navigate]);
+	}, [isLoading, auth.isAuthenticated, navigate]);
 
 	const handleFileSelect = (file: File | null) => {
 		setFile(file);
