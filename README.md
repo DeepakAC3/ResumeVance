@@ -8,7 +8,7 @@ An AI-powered resume reviewer that lets candidates upload a PDF, convert it to a
 - PDF upload via drag-and-drop, client-side size validation (max 5 MB), and single-file mode
 - Automatic PDF → PNG conversion for a crisp preview using `pdfjs-dist`
 - Storage of the original resume, generated preview image, and feedback in Puter FS/KV
-- AI feedback (Claude Sonnet 4 via Puter AI) that scores ATS readiness and provides structured tips
+- AI feedback (Claude Sonnet 5.5 via Puter AI) that scores ATS readiness and provides structured tips
 - Resume review page with side-by-side preview and categorized insights (ATS, content, structure, tone, skills)
 
 ## Stack
